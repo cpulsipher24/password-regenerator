@@ -17,6 +17,12 @@ function generatePassword() {
     return ""; // Return an empty string if the length is invalid
   }
 
+  // Prompt user for character types
+  var includeLowercase = confirm("Include lowercase characters?");
+  var includeUppercase = confirm("Include uppercase characters?");
+  var includeNumeric = confirm("Include numeric characters?");
+  var includeSpecial = confirm("Include special characters?");
+
   // Build the character pool based on user's choices
   var charPool = "";
   if (includeLowercase) charPool += lowercaseChars;
