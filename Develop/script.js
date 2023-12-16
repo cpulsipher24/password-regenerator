@@ -31,7 +31,11 @@ function generatePassword() {
   if (includeSpecial) charPool += specialChars;
 }
 
-
+  // Validate that at least one character type is selected
+  if (!(includeLowercase || includeUppercase || includeNumeric || includeSpecial)) {
+    alert("Please select at least one character type.");
+    return ""; // Return an empty string if no character type is selected
+  }
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
