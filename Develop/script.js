@@ -10,7 +10,15 @@ function generatePassword() {
 
   // Prompt user for password length
   var passwordLength = parseInt(prompt("Enter the length of the password (between 8 and 128 characters):"));
+
+  // Validate password length
+  if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+    alert("Please enter a valid password length between 8 and 128 characters.");
+    return ""; // Return an empty string if the length is invalid
+  }
 }
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
