@@ -1,7 +1,13 @@
 // Assignment code here
 
 // Function to generate a random password based on user criteria
-function generatePassword() 
+function generatePassword() {
+  // Define arrays for different character types
+  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericChars = "0123456789";
+  var specialChars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
