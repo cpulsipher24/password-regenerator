@@ -7,6 +7,9 @@ function generatePassword() {
   var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numericChars = "0123456789";
   var specialChars = "!@#$%^&*()_+-=[]{}|;:,.<>?";
+
+  // Prompt user for password length
+  var passwordLength = parseInt(prompt("Enter the length of the password (between 8 and 128 characters):"));
 }
 
 // Get references to the #generate element
