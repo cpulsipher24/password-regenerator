@@ -42,8 +42,9 @@ function generatePassword() {
       var randomIndex = Math.floor(Math.random() * charPool.length);
       password += charPool.charAt(randomIndex);
     }
+    return password;
   }
-  
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
