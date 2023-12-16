@@ -22,6 +22,7 @@ function generatePassword() {
   if (includeLowercase) charPool += lowercaseChars;
   if (includeUppercase) charPool += uppercaseChars;
   if (includeNumeric) charPool += numericChars;
+  if (includeSpecial) charPool += specialChars;
 }
 
 
