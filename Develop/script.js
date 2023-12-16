@@ -35,9 +35,15 @@ function generatePassword() {
   if (includeUppercase) charPool += uppercaseChars;
   if (includeNumeric) charPool += numericChars;
   if (includeSpecial) charPool += specialChars;
-}
 
-
+    // Generate the password
+    var password = "";
+    for (var i = 0; i < passwordLength; i++) {
+      var randomIndex = Math.floor(Math.random() * charPool.length);
+      password += charPool.charAt(randomIndex);
+    }
+  }
+  
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
