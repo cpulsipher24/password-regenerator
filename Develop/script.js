@@ -16,6 +16,12 @@ function generatePassword() {
     alert("Please enter a valid password length between 8 and 128 characters.");
     return ""; // Return an empty string if the length is invalid
   }
+
+  // Build the character pool based on user's choices
+  var charPool = "";
+  if (includeLowercase) charPool += lowercaseChars;
+  if (includeUppercase) charPool += uppercaseChars;
+  if (includeNumeric) charPool += numericChars;
 }
 
 
