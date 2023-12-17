@@ -8,8 +8,7 @@ The Password Generator is a simple web application that allows users to generate
 
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
+- [Screenshot](#screenshot)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -26,6 +25,9 @@ The Password Generator is a simple web application that allows users to generate
 
    ```bash
    git clone https://github.com/cpulsipher/password-generator.git
+
+## Screenshot
+![Screenshot](./Images/screenshot.jpg)
 
 ## License
 Please refer to the LICENSE file in the repository. 
