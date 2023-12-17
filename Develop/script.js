@@ -18,10 +18,10 @@ function generatePassword() {
   }
 
   // Prompt user for character types
-  var includeLowercase = confirm("Include lowercase characters?");
-  var includeUppercase = confirm("Include uppercase characters?");
-  var includeNumeric = confirm("Include numeric characters?");
-  var includeSpecial = confirm("Include special characters?");
+  var includeLowercase = confirm("Include lowercase characters? (Cancel for no. OK for yes)");
+  var includeUppercase = confirm("Include uppercase characters? (Cancel for no. OK for yes)");
+  var includeNumeric = confirm("Include numeric characters? (Cancel for no. OK for yes)");
+  var includeSpecial = confirm("Include special characters? (Cancel for no. OK for yes)");
 
   // Validate that at least one character type is selected
   if (!(includeLowercase || includeUppercase || includeNumeric || includeSpecial)) {
